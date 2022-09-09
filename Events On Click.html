@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events On Click</title>
+</head>
+
+<body>
+    <h2>Javascript Event Listener</h2>
+    <p>This Example uses addEventListener() method to add two click events to the same button.</p>
+    <button id="myBtn">Try It</button>
+    <script>
+        let x = document.getElementById("myBtn");
+        x.addEventListener("click", myfunction);
+        x.addEventListener("click", someOtherFunction);
+
+        function myfunction() {
+            alert('Hello World');
+
+        }
+
+        function someOtherFunction() {
+            alert("This function is also Executes");
+        }
+    </script>
+
+</body>
+
+</html>
